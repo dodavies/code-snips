@@ -13,8 +13,8 @@ else:
     print "Uploading using file name"
     fname = fileupload
 
-url = 'https://s.james.ac/fr.php'
+url = 'your url'
 files = {'file': (fname, open(fileupload, 'rb'))}
 
-r = requests.post(url, files=files, auth=('james', '6126'))
+r = requests.post(url, files=files, auth=('a', 'b'))
 print (r.text)
